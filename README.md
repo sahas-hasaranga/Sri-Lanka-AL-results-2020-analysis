@@ -140,3 +140,8 @@ The notebook can be expanded to uncover fascinating insights. Here are a few adv
                                        (df_cleaned['sub2_r'] == 'F') & 
                                        (df_cleaned['sub3_r'] == 'F')]
    ``
+
+## 🤖 Automated Data Transformation
+For automated pipelines, a standalone Python script is provided to replicate the data cleaning steps without needing a Jupyter Notebook environment.
+* **Script:** day 3/transform_data.py
+* **Usage:** Run python transform_data.py to automatically load, clean (drop nulls/duplicates, extract ranks), and save the processed dataset as cleaned_al_data.csv.
