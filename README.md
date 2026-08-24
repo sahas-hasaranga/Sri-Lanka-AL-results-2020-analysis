@@ -100,3 +100,11 @@ Feel free to fork the repository and add your own specific analytical queries (e
 
 ---
 *If you found this analysis helpful, please consider giving this repository a ⭐!*
+
+## 🛠️ Data Processing & Cleaning Steps
+In this analysis, several data wrangling steps were performed to ensure data quality and prepare for deeper insights:
+* **Distribution Analysis:** Analyzed the distribution of students across different academic streams, gender, and General Test (CGT) results.
+* **Data Cleaning & Deduplication:** Removed missing records (null values in the gender column) and eliminated duplicate entries to ensure a clean dataset.
+* **Rank Extraction:** Extracted pure numerical values from the `district_rank` column (which initially contained mixed text/number formats).
+* **Top Performers Filtering:** Filtered the dataset to isolate and analyze top-performing students who secured a District Rank of less than 500.
+* **Interactive Visualization:** Integrated interactive data tables for seamless scrolling and searching within the notebook environment.
