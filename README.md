@@ -16,3 +16,8 @@ Here is a quick summary of the dataset:
 To view the full interactive data profiling report directly in your browser without downloading, click the link below:
 
 👉 **[View Interactive Data Profiling Report Here](https://htmlpreview.github.io/?https://github.com/sahas-hasaranga/Sri-Lanka-AL-results-2020-analysis/blob/main/profiling_report.html)**
+
+---
+## 🎓 Author
+* **Name:** S.H. SOORIYAARACHCHI
+* **Student ID:** GAHDSE252F-028
