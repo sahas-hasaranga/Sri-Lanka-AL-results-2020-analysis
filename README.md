@@ -108,3 +108,35 @@ In this analysis, several data wrangling steps were performed to ensure data qua
 * **Rank Extraction:** Extracted pure numerical values from the `district_rank` column (which initially contained mixed text/number formats).
 * **Top Performers Filtering:** Filtered the dataset to isolate and analyze top-performing students who secured a District Rank of less than 500.
 * **Interactive Visualization:** Integrated interactive data tables for seamless scrolling and searching within the notebook environment.
+
+## 🔍 Advanced Data Filtering Examples
+The notebook can be expanded to uncover fascinating insights. Here are a few advanced filtering examples you can try:
+
+1. **Top Performers (3 A's)**
+   Identify students who achieved 'A' grades in all three main subjects:
+   ``python
+   top_students = df_cleaned[(df_cleaned['sub1_r'] == 'A') & 
+                             (df_cleaned['sub2_r'] == 'A') & 
+                             (df_cleaned['sub3_r'] == 'A')]
+   ``
+
+2. **District 1st Ranks**
+   Isolate the students who secured the 1st rank in their respective districts:
+   ``python
+   district_first = df_cleaned[df_cleaned['district_rank_numeric'] == 1]
+   ``
+
+3. **High Achievers in Science**
+   Find Science stream students with an exceptional Z-Score (above 2.0):
+   ``python
+   high_zscore_science = df_cleaned[(df_cleaned['stream'] == 'SCIENCE') & (df_cleaned['Zscore'] > 2.0)]
+   ``
+
+4. **Interesting Anomalies**
+   Find students who excelled in General English ('A' grade) but failed all three main subjects (3 'F's):
+   ``python
+   english_pro_but_failed = df_cleaned[(df_cleaned['ge_r'] == 'A') & 
+                                       (df_cleaned['sub1_r'] == 'F') & 
+                                       (df_cleaned['sub2_r'] == 'F') & 
+                                       (df_cleaned['sub3_r'] == 'F')]
+   ``
